@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Student Study Planner (NYC Edition)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Contact</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend><h3>Ask a Mentor</h3></legend>
+                    <label for="name">
+                        Write your name
+                    </label>
+                    <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required>
+                    <label for="reason">
+                        Reason
+                    </label>
+                        <select name="reason" id="reason" required>
+                            <option value="" disabled selected>Select a reason</option>
+                            <option value="General Question">General Question</option>
+                            <option value="Schedule Help">Schedule Help</option>
+                            <option value="Resources Request">Resources Request</option>          
+                        </select>
+                    <br>
+                    <div class="message">
+                    <label for="message">
+                        Write your question here
+                    </label>
+                    <textarea id="message" name="message" rows="10" cols="100" required placeholder="Your question"></textarea>
+                    <button type="submit">Send</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+        <section>
+            <div id="contact"></div>
+            <h3>Contact Info</h3>
+            <p><strong>Email:</strong> studyplanner.nyc@example.com</p>
+            <p>Typical reply time: within 48 hours</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><strong>© 2025 Ahmed Sharif. Built for SBA 307.</strong></p>
+    </footer>
+</body>
+</html>

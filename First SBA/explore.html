@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore - Student Study Planner (NYC Edition)</title>
+    <style>
+        body{
+            background-color:antiquewhite;
+            font-size:large;
+        }
+        header h1,nav {
+            text-align: center;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        header nav {
+            background-color:beige;
+            border: 4px solid black;
+            font-size: larger;
+        }
+        footer {
+            margin-top: 240px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Find your Focus</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <p>Pick a study track and get a simple, 4-week plan with weekly tips.</p>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend><h2>Get a 4-week Track Plan</h2></legend>
+                    <label for="useremail">Email</label>
+                    <input type="email" name="useremail" id="useremail" placeholder="Your email" autocomplete="email" required>
+                    <label for="plan">Choose your track</label>
+                    <select name="plan" id="plan" required>
+                        <option value="" disabled selected>Choose your track</option>  
+                        <option value="algorithms & data structures">Algorithms & Data Structures</option>
+                        <option value="web development">Web Development (HTML/CSS/JS)</option>
+                        <option value="data analytics">Data Analytics (SQL/Tableau)</option>          
+                    </select>
+                    <input type="checkbox" name="tips" id="tips">
+                    <label for="tips">Send me weekly study tips </label>                    
+                    <button type="submit">Get My Plan</button>
+                </fieldset>
+            </form>
+        </section>
+        <section>
+            <h4>How the tracks work</h4>
+            <ul>
+                <li>Each track includes 4 weekly focus areas.</li>
+                <li>Plan for 6-10 study hours/week.</li>
+                <li>Sundays are for light review and rest.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p><strong>© 2025 Ahmed Sharif. Built for SBA 307.</strong></p>
+    </footer>
+</body>
+</html>
