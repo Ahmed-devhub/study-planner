@@ -21,3 +21,23 @@ header nav {
 .message{
     margin-top: 10px;
 }
+.input :hover{
+    background-color:cornsilk;
+}
+@keyframes gentleShake {
+    0% { transform: translateX(0) rotate(0); }
+    15% { transform: translateX(-1px) rotate(-0.3deg); }
+    30% { transform: translateX(1px) rotate(0.3deg); }
+    45% { transform: translateX(-1px) rotate(-0.2deg); }
+    60% { transform: translateX(1px) rotate(0.2deg); }
+    100% { transform: translateX(0) rotate(0); }
+}
+header > h1 {
+    animation: gentleShake 3.5s ease-in-out infinite;
+}
+@keyframes subtlePulse { 
+  0% { transform: scale(1) } 
+  50% { transform: scale(1.03) } 
+  100% { transform: scale(1) } 
+}
+button:hover { animation: subtlePulse 1s ease-in-out infinite; }
